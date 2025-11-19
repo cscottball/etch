@@ -1,0 +1,76 @@
+* {
+    outline: 2px solid red !important;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh; /* make sure it fills the screen */
+  background: linear-gradient(to right, #fff7ad, #ffa9f9);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh; /* full viewport height */
+}
+
+
+.header {
+  display: flex;
+  flex-direction: column ;
+  justify-content: center;
+  align-items: center;
+}
+.welcome {
+  display: flex;
+  flex-direction: column ;
+  justify-content: center;
+    align-items: center;
+
+  margin-top: 15px; /* space from the top */
+  font-size: 3em;
+  font-weight: bold;
+  color: #333;
+  font-family: "Permanent Marker", cursive;
+}
+
+.grid-buttons {
+  display: flex;
+  flex-direction: column ;
+  justify-content: space-evenly;
+}
+
+/* Base button look */
+.grid-btn {
+  margin-top: 15px;
+    padding: 20px 63px;
+  border-radius: 999px;            /* pill shape */
+  border: none;
+  font-family: "Permanent Marker", system-ui, sans-serif;
+  font-size: 32px;
+  letter-spacing: 0.03em;
+  color: #4a3b4f;
+  background: linear-gradient(135deg, #fff7ad, #ffd1ff);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  cursor: pointer;
+
+  transition:
+    transform 0.15s ease,
+    box-shadow 0.15s ease,
+    filter 0.15s ease;
+}
+
+/* Hover effect */
+.grid-btn:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  filter: brightness(1.05);
+}
+
+/* Pressed/clicked effect */
+.grid-btn:active {
+  transform: translateY(0) scale(0.98);
+  box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+  filter: brightness(0.97);
+}
